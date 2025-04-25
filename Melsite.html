@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey Together</title>
+    <style>
+        body {
+            font-family: 'Cursive', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+            color: #3d3d3d;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background: #000;
+            color: #fff;
+        }
+        header h1 {
+            font-size: 36px;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081, 0 0 15px #ff4081;
+            }
+            100% {
+                text-shadow: 0 0 10px #f50057, 0 0 20px #f50057, 0 0 30px #f50057;
+            }
+        }
+        .counter {
+            text-align: center;
+            font-size: 24px;
+            background: #ffcdd2;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .btn-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .my-love-btn, .access-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            background: #000;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .my-love-btn:hover, .access-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+            background: linear-gradient(135deg, #000, #333);
+        }
+        .quote-section {
+            text-align: center;
+            padding: 30px;
+            background: #ffcdd2;
+            position: relative;
+            border-top: 3px solid #000;
+        }
+        .quote-section p {
+            font-size: 20px;
+            font-style: italic;
+            animation: fadeQuotes 10s infinite;
+        }
+        @keyframes fadeQuotes {
+            0%, 33% { opacity: 1; }
+            34%, 100% { opacity: 0; }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px auto;
+        }
+        .gallery img, .gallery video {
+            width: 300px;
+            border: 3px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .my-love-section {
+            text-align: center;
+            padding: 30px;
+            background: #ffcdd2;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            display: none; /* Initially hidden */
+        }
+        .my-love-profile {
+            margin: 20px 0;
+        }
+        .my-love-profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .my-love-details ul {
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .my-love-details ul li span {
+            font-weight: bold;
+            color: #f50057;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Journey Together</h1>
+        <p>Happy 1-Month Anniversary, my love! 🌹</p>
+    </header>
+
+    <section class="counter">
+        <p>It has been <span id="days-counter"></span> days since my life got better! 💖</p>
+    </section>
+
+    <section class="btn-section">
+        <button class="access-btn" onclick="location.href='Melcard.html'">🌟 Access Your Card 🌟</button>
+        <button class="my-love-btn" onclick="toggleMyLove()">❤️ My Love ❤️</button>
+    </section>
+
+    <section class="quote-section">
+        <p>"I love you not only for what you are, but for what I am when I am with you."</p>
+        <p>"True love stories never have endings." – Richard Bach</p>
+        <p>"Every love story is beautiful, but ours is my favorite."</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Our Memories</h2>
+        <img src="pic1.jpg" alt="Memory 1">
+        <img src="hot1.jpg" alt="Memory 2">
+        <video src="vid 1.mp4" controls muted></video>
+        <video src="vid 2.mp4" controls muted></video>
+    </section>
+
+    <section class="my-love-section" id="my-love">
+        <h2>About My Love</h2>
+        <div class="my-love-profile">
+            <img src="hot1.jpg" alt="Her Profile Picture">
+        </div>
+        <div class="my-love-details">
+            <ul>
+                <li><span>Name:</span> [Melody (I call her Wifey)]</li>
+                <li><span>Likes:</span> [Pasta!!!, Her babe]</li>
+                <li><span>Dislikes:</span> [Stress!]</li>
+                <li><span>Favorite Color:</span> [Black, she fw blue too..lol]</li>
+                <li><span>Hobbies:</span> [Sleeping, looking incrdibly sexy and beautiful]</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>💖 With all my heart, yours always, you are my everything 💖</p>
+    </footer>
+
+    <script>
+        // Days Counter
+        const startDate = new Date('2025-03-28'); // Counter starts from March 28
+        const today = new Date();
+        const diffTime = Math.abs(today - startDate);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        document.getElementById('days-counter').textContent = diffDays;
+
+        // Toggle About My Love Section
+        function toggleMyLove() {
+            const myLoveSection = document.getElementById('my-love');
+            if (myLoveSection.style.display === 'none') {
+                myLoveSection.style.display = 'block';
+                myLoveSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                myLoveSection.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

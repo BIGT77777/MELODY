@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovely Digital Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000; /* Black background to make the card pop */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            width: 90%;
+            max-width: 400px;
+            height: 600px;
+            background: url('cardpic1.jpg') no-repeat center center/cover;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            border: 5px solid #000; /* Black border around the card */
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: #fff; /* White text for contrast */
+        }
+        h1 {
+            font-size: 24px;
+            color: #ff4081; /* Vibrant pink against black */
+        }
+        p {
+            font-size: 16px;
+            color: #fff;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #000; /* Black button with pink hover */
+            color: #fff;
+            border: 2px solid #ff4081;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s, border-color 0.3s;
+        }
+        button:hover {
+            background: #ff4081;
+            border-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <audio class="audio" autoplay>
+            <source src="romantic-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="content">
+            <h1>Happy 1-Month Anniversary ML!</h1>
+            <p>You make my heart so happy and you mean more too me than anything!</p>
+            <button onclick="alert('💞 I love you more than words can say, and i will always love you, you are the most precious thing in my life and i cherish you, you are my world! 💞')">Tap for a Sweet Surprise!</button>
+        </div>
+    </div>
+</body>
+</html>
